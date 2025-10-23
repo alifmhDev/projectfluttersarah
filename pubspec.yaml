@@ -1,0 +1,30 @@
+name: flutter_application_2
+description: A new Flutter project
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sidebarx: ^0.17.2
+  getwidget: ^7.0.0
+  flutter_animate: ^4.5.0
+  shared_preferences: ^2.3.3
+  intl: ^0.20.2
+  device_info_plus: ^12.1.0
+  webview_flutter: ^4.8.0
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/bg.png
+    - assets/images/logo1.png
+    - assets/images/
