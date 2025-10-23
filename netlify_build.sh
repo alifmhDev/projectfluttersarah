@@ -3,6 +3,12 @@
 # Stop build on first error
 set -e
 
+# Tampilkan informasi branch saat ini
+echo "======================================"
+echo "🚀 Netlify Build Process Starting..."
+echo "📦 Current branch: ${BRANCH:-unknown}"
+echo "======================================"
+
 # Install Flutter SDK
 echo "🚀 Installing Flutter..."
 git clone https://github.com/flutter/flutter.git -b stable
@@ -17,4 +23,6 @@ flutter pub get
 # Build for web
 flutter build web --release
 
-echo "✅ Flutter build completed!"
+echo "✅ Flutter build completed successfully!"
+echo "📁 Output directory: build/web"
+echo "======================================"
